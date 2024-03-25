@@ -179,11 +179,9 @@ a {
 
 .button-container {
   display: flex;
-float:right;
   margin-left:-1px;
-  min-width:256px;
   position:fixed;
-  width:30%;
+  
 }
 
 .button {
