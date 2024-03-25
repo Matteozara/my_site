@@ -171,10 +171,59 @@ a {
   }
   .nav_section {
     font-size: 20px;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   
 }
+
+
+.button-container {
+  display: flex;
+float:right;
+  margin-left:-1px;
+  min-width:256px;
+  position:fixed;
+  width:30%;
+}
+
+.button {
+font-size: 25px;
+margin-left: 30px;
+margin-top: 15px;
+background-color: transparent;
+color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button-color {
+text-decoration: none;
+color: white;
+}
+
+.button:hover {
+text-decoration: underline;
+}
+
+
+:root {
+--primary-color: rgba(0, 0, 0, 0.75);
+--overlay-color: rgba(68, 68, 68, 0.85);
+--menu-speed: 0.75s;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+@media screen and (max-width: 48em) {
+  .button-color {
+    font-size: 16px;
+  }
+  
+  }
 
 
 
