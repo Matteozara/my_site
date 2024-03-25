@@ -169,6 +169,10 @@ a {
     min-height:400px;
 	  min-width: 300px;
   }
+  .nav_section {
+    font-size: 20px;
+    gap: 2rem;
+  }
   
 }
 
