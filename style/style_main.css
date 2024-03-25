@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Tourney:ital,wght@0,100..900;1,100..900&family=Zeyada&display=swap');
+
+
+#background-animation-container {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1000;
+}
+
+.ani-bubble {
+  background-color: rgb(70, 70, 70);
+  border-radius: 75px;
+  height: 150px;
+  position: absolute;
+  top: 100%;
+  width: 150px;
+
+  -webkit-animation: bubblemove 10s linear infinite;
+  -moz-animation: bubblemove 10s linear infinite;
+  animation: bubblemove 10s linear infinite;
+}
+
+
+
+
+@-webkit-keyframes bubblemove {
+  from { top: 100%; }
+  to   { top: -600px; }
+}
+@-moz-keyframes bubblemove {
+  from { top: 100%; }
+  to   { top: -600px; }
+}
+@keyframes bubblemove {
+  from { top: 100%; }
+  to   { top: -600px; } /* This must be far enough off screen to allow the largest object to wander off with enough delay before restarting at the bottom, to be caught by the interval timer */
+}
+
+body {
+  background-color: black;
+  width: 100%;
+  height: 200%;
+  padding: 0;
+  margin: 0;
+}
+
+.main-title {
+position: absolute;
+color: #f9f1e9;
+text-align: center;
+height: 100%;
+width: 100%;
+top: 50%;
+left: 50%;
+-webkit-transform: translate3d(-50%,-50%,0);
+transform: translate3d(-50%,-50%,0);
+}
+
+.title {
+  padding-top: 15%;
+  font-size: 130px;
+  padding-bottom: 0%;
+  font-family: 'Tourney', sans-serif;
+}
+
+.text_pres {
+  font-size: 30px;
+  padding-top: 0%;
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.phrase {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  font-size: 50px;
+  
+}
+
+.menu_list {
+  font-size: 50px;
+}
+
+
+
+
+
+.new_nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_section {
+  display: flex;
+  gap: 5rem;
+  padding: 1.5rem 2rem;
+  font-size: 40px;
+  /* border-left: 1px solid var(--border-color); */
+  align-items: center;
+  justify-content: center;
+  flex-basis: calc(100% / 2);
+  z-index: 1;
+}
+
+#contacts {
+  color: #fff;
+  justify-content: end;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Courier Prime', monospace;
+  color: white;
+  cursor: pointer;
+}
+
+
+.big-text {
+  font-size: 90px; /* Adjust the font size as needed */
+  color: red;
+  text-shadow: 
+  -1px -1px 0 yellow,  
+     1px -1px 0 yellow,
+    -1px  1px 0 yellow,
+     1px  1px 0 yellow,
+     0px -1px 0 yellow,  
+     0px 1px 0 yellow,
+     -1px  0px 0 yellow,
+     1px  0px 0 yellow,
+     -2px -2px 0 yellow,
+     2px -2px 0 yellow,
+     -2px  2px 0 yellow,
+     2px  2px 0 yellow,
+     -2px  0px 0 yellow,
+     2px  0px 0 yellow,
+     0px  -2px 0 yellow,
+     0px  2px 0 yellow,
+     -3px -3px 0 yellow,
+     3px -3px 0 yellow,
+     -3px  3px 0 yellow,
+     3px  3px 0 yellow,
+     -3px  0px 0 yellow,
+     3px  0px 0 yellow,
+     0px  -3px 0 yellow,
+     0px  3px 0 yellow;
+}
+
+
+@media screen and (max-width: 48em) {
+  .title {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  .big-text {
+    font-size: 60px;
+  }
+  .text_pres {
+    font-size: 18px;
+  }
+  body {
+    min-height:400px;
+	  min-width: 300px;
+  }
+  
+}
+
+
+
+
+
+
