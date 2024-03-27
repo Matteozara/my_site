@@ -4,6 +4,7 @@
 #background-animation-container {
   background-color: #000;
   height: 100%;
+  min-height: 800px;
   left: 0;
   overflow: hidden;
   position: absolute;
@@ -16,7 +17,7 @@
   background-color: rgb(70, 70, 70);
   border-radius: 75px;
   height: 150px;
-  position: absolute;
+  position:fixed;
   top: 100%;
   width: 150px;
 
@@ -30,21 +31,21 @@
 
 @-webkit-keyframes bubblemove {
   from { top: 100%; }
-  to   { top: -600px; }
+  to   { top: -800px; }
 }
 @-moz-keyframes bubblemove {
   from { top: 100%; }
-  to   { top: -600px; }
+  to   { top: -800px; }
 }
 @keyframes bubblemove {
   from { top: 100%; }
-  to   { top: -600px; } /* This must be far enough off screen to allow the largest object to wander off with enough delay before restarting at the bottom, to be caught by the interval timer */
+  to   { top: -800px; } /* This must be far enough off screen to allow the largest object to wander off with enough delay before restarting at the bottom, to be caught by the interval timer */
 }
 
 body {
   background-color: black;
   width: 100%;
-  height: 200%;
+  height: 300%;
   padding: 0;
   margin: 0;
 }
@@ -109,6 +110,10 @@ transform: translate3d(-50%,-50%,0);
   z-index: 1;
 }
 
+.nav_section a:hover {
+  color: grey;
+}
+
 #contacts {
   color: #fff;
   justify-content: end;
@@ -154,35 +159,15 @@ a {
 }
 
 
-@media screen and (max-width: 48em) {
-  .title {
-    font-size: 50px;
-    margin-top: 50px;
-  }
-  .big-text {
-    font-size: 60px;
-  }
-  .text_pres {
-    font-size: 18px;
-  }
-  body {
-    min-height:400px;
-	  min-width: 300px;
-  }
-  .nav_section {
-    font-size: 20px;
-    gap: 1.5rem;
-  }
-  
-}
-
 
 .button-container {
-  display: flex;
-  margin-left:-1px;
-  position:fixed;
-  
+  display: block;
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
 
 .button {
 font-size: 25px;
@@ -216,12 +201,64 @@ padding: 0;
 box-sizing: border-box;
 }
 
+
 @media screen and (max-width: 48em) {
+  .title {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  .big-text {
+    font-size: 60px;
+  }
+  .text_pres {
+    font-size: 18px;
+  }
+  body {
+    min-height:400px;
+	  min-width: 300px;
+  }
+  .nav_section {
+    font-size: 30px;
+    gap: 2rem;
+  }
   .button-color {
-    font-size: 16px;
+    font-size: 20px;
+  }
+  #background-animation-container {
+    min-height: 600px;
   }
   
+}
+
+
+/* For smartphones */
+@media screen and (max-width: 38em) {
+  .title {
+    font-size: 50px;
+    margin-top: 80px;
   }
+  .big-text {
+    font-size: 60px;
+    margin-top: 30px;
+  }
+  .text_pres {
+    font-size: 18px;
+  }
+  body {
+    min-height:400px;
+    min-width: 300px;
+  }
+  .nav_section {
+    font-size: 20px;
+    gap: 1rem;
+  }
+  .button-color {
+    font-size: 14px;
+  }
+  .button {
+    margin-left: 15px;
+  }
+}
 
 
 
