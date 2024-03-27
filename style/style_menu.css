@@ -40,3 +40,28 @@
 		}
 		
 	  }
+
+
+	  @media screen and (max-width: 48em) {
+		.button-color {
+		  font-size: 20px;
+		}		
+	  }
+	  
+	  
+	  /* For smartphones */
+	  @media screen and (max-width: 38em) {
+		.button-color {
+		  font-size: 14px;
+		}
+		.button {
+		  margin-left: 15px;
+		}
+	  }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
