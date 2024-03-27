@@ -39,8 +39,7 @@
   .left
   {
 	  background-color: rgb(24, 24, 24);
-	  float:right;
-	  height:100%;
+	  height: 100%;
 	  margin-left:-1px;
 	  min-width:256px;
 	  position:fixed;
@@ -181,6 +180,9 @@
 		  width:100%;
 	  min-height:800px;
 	  min-width: 300px;
+	  }
+	  .left {
+		margin-left: 0px;
 	  }
 	  .name-text p {
 		font-size: 18px;
