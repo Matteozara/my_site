@@ -229,21 +229,6 @@ box-sizing: border-box;
 }
 
 
-/* Adjust button size for smaller screens */
-@media screen and (max-width: 768px) {
-  .my_button {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .my_button {
-    width: 30%; /* Adjust width for even smaller screens */
-    line-height: 60px; /* Adjust line-height accordingly */
-  }
-}
-
-
 
 
 html::-webkit-scrollbar {
@@ -326,4 +311,18 @@ html::-webkit-scrollbar {
     width:100%;
     transition:800ms ease all;
   }
+
+/* Adjust button size for smaller screens */
+@media screen and (max-width: 768px) {
+  .my_button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .my_button {
+    width: 30%; /* Adjust width for even smaller screens */
+    line-height: 60px; /* Adjust line-height accordingly */
+  }
+}
 
