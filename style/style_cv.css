@@ -116,13 +116,22 @@
 	  margin:0 auto;
 	  width:85%;
   }
+
+  .button-cv
+  {
+	position: relative;
+	padding:1em;
+	margin:0 auto;
+	max-width:975px;
+	text-align:right;
+  }
   
   .inner
   {
 	position: relative;
 	  margin:0 auto;
 	  max-width:975px;
-	  padding:1em;
+	  
   }
   
   .inner h1
@@ -147,10 +156,17 @@
 	color: rgb(199, 199, 199);
   }
   
-  .inner section
-  {
-	  margin:100px auto;
-  }
+.inner section:not(:last-of-type) {
+  margin: 100px 30px;
+}
+
+.inner section:last-of-type {
+  margin: 0 30px;
+}
+
+
+
+
   
   ul
   {
@@ -172,14 +188,15 @@
 	  text-align:justify;
   }
   
+  
   @media screen and (max-width: 48em) {
 	  .right,.left
 	  {
-		  float:none;
-	  position:relative !important;
-		  width:100%;
-	  min-height:800px;
-	  min-width: 300px;
+		float:none;
+	  	position:relative !important;
+		width:100%;
+	  	min-height:800px;
+	  	min-width: 300px;
 	  }
 	  .left {
 		margin-left: 0px;
@@ -195,9 +212,10 @@
 	  }
 	  
 	.handmade {
-	text-align:center !important;
-	margin-top:0px !important;
-  } }
+		text-align:center !important;
+		margin-top:0px !important;
+	} 
+	}
   
   @media screen and (max-width: 75em) {
 	  body
