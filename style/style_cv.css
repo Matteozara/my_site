@@ -156,13 +156,15 @@
 	color: rgb(199, 199, 199);
   }
   
-.inner section:not(:last-of-type) {
-  margin: 100px 30px;
-}
+	.inner section:not(:last-of-type) 
+	{
+		margin: 100px 30px;
+	}
 
-.inner section:last-of-type {
-  margin: 0 30px;
-}
+	.inner section:last-of-type 
+	{
+		margin: 0 30px;
+	}
 
 
 
